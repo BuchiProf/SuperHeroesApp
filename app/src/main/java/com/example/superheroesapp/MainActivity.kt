@@ -1,5 +1,6 @@
 package com.example.superheroesapp
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -38,10 +39,10 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun SuperHeroesAppPreview() {
     SuperHeroesAppTheme {
-        Greeting("Android")
+        HeroesApp()
     }
 }
